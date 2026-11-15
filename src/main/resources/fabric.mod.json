@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "rynek_analiza",
+  "version": "0.4.0",
+  "name": "Rynek Analiza (auto rynek z analizą cen)",
+  "description": "Auto rynek dla Anarchii z wbudowaną analizą cen: jeden start - najpierw analiza (/ah search, średnia 3 najtańszych, skup z marżą; można ją pominąć), potem snajper ofert z zakładki Najnowsze z podświetleniem zysku, wystawianie przy każdym restarcie rynku (albo tryb Tylko sprzedaż), anty-AFK i analiza co 12 min. Tempo analizy wg pingu. Lista przedmiotów importowana z BK-Rynku (BK nie jest już potrzebny).",
+  "authors": [],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "pl.rynekanaliza.RynekAnalizaMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
